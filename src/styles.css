@@ -1,8 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+/* Declaring new font faces */
+
 @font-face {
     font-family: questrial;
     src: url(assets/Questrial-Regular.ttf) format("opentype");
 }
+
+/* adding class to site header */
 
 .custom-header {
     min-height: 105px;
@@ -10,3 +13,11 @@
     padding-right: 5%;
 }
 
+/* adding class to header navbar collapse items */
+
+@media screen and (max-width: 992px) {
+    .navbar.navbar-dark .breadcrumb .nav-item.active>.nav-link, .navbar.navbar-dark .navbar-nav .nav-item.active>.nav-link {
+        width: 50%;
+        float: right;
+    }
+}

@@ -1,0 +1,95 @@
+.homeSquares {
+    height: calc(100vh - 105px);
+    background-image: url('../../../assets/homeSquares.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.sidenav {
+    height: 100%;
+    position: relative;
+}
+
+.sidenavContent {
+    width: 106px;
+    /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1;
+    /* Stay at the top */
+    left: 0;
+    padding-left: 41px;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 50px;
+}
+
+/* The navigation menu links */
+
+.sidenavContent a {
+    padding: 20px 0px 0px 0px;
+    font-size: 10px;
+    color: #FFFFFF;
+    opacity: 30%;
+    display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+
+.sidenavContent a:hover {
+    opacity: 100%;
+}
+
+.sidenavContent div {
+    color: white;
+    opacity: 30%;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    /* IE 9 */
+    -moz-transform: rotate(180deg);
+    /* Firefox */
+    -webkit-transform: rotate(180deg);
+    /* Safari and Chrome */
+    -o-transform: rotate(180deg);
+    /* Opera */
+    font-family: questrial;
+    font-size: 16px;
+    letter-spacing: 5px;
+    padding-top: 30px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media screen and (max-height: 700px) {
+    .sidenavContent div {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-height: 625px) {
+    .sidenavContent div {
+        display: none;
+    }
+}
+
+@media screen and (min-height: 992px) {
+    #navbarCollapse links ul li a {
+        width: 50% !important;
+        float: right;
+    }
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+
+/* @media screen and (max-height: 450px) {
+    .sidenavContent {
+        padding-top: 15px;
+    }
+    .sidenavContent a {
+        font-size: 18px;
+    }
+} */
