@@ -1,0 +1,5 @@
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/catalinpirv/subdomains/altasoft-frontend
+    - /bin/rm -Rf $DEPLOYPATH/*
+    - /bin/cp -R dist/altasoft/. $DEPLOYPATH
