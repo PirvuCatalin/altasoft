@@ -86,7 +86,9 @@
 
 @media screen and (max-width: 992px) {
     .homeSquaresDescriptionText {
-        width: 100% !important;
+        width: calc(100% - 100px) !important; /* update the calc pixels with the padding of the element*/
+        padding-left: 0px !important;
+        padding-right: 0px !important;
         top: 65% !important;
         font-size: min(4vw,4vh) !important;
         left: 54% !important;
@@ -175,4 +177,24 @@
     letter-spacing: 5px;
     line-height: 1.2;
     user-select: none;
+}
+
+.first-page-scroll-arrow {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    /* color: white; */
+    background-image: url('../../../assets/scroll-arrow.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 5vh;
+    width: 10vh;
+    cursor: pointer;
+}
+
+.first-page-scroll-arrow:hover {
+    background-image: url('../../../assets/scroll-arrow-hover.png');
 }

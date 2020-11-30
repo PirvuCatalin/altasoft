@@ -12,4 +12,10 @@ export class FirstHomePageComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onClickScrollArrow() {
+    const element = document.querySelector("#expertiseElement")
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'end' })
+    }
+  }
 }
