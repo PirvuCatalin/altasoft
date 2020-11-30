@@ -1,0 +1,37 @@
+.expertise-title-background {
+    position: relative;
+    background-color: #272727;
+    height: 175px;
+}
+
+.expertise-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-family: questrial;
+    font-size: 2vw;
+    text-align: center;
+    letter-spacing: 15px;
+    user-select: none;
+    color: #FFB18A;
+    width: 100%;
+}
+
+.expertise-title-shadow {
+    opacity: 0.05;
+    font-size: 5vw;
+    top: 60%;
+    letter-spacing: 25px;
+}
+
+@media screen and (max-width: 992px) {
+    .expertise-title {
+        font-size: 3vw;
+    }
+
+    .expertise-title-shadow {
+        display: none;
+    }
+}
