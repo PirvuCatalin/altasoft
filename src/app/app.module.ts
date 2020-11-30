@@ -9,6 +9,8 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { HeaderComponent } from './component/header/header.component';
 import { AboutUsComponent } from './component/about-us/about-us.component';
 import { ContactComponent } from './component/contact/contact.component';
+import { ExpertiseComponent } from './component/expertise/expertise.component';
+import { FirstHomePageComponent } from './component/first-home-page/first-home-page.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { ContactComponent } from './component/contact/contact.component';
     PageNotFoundComponent,
     HeaderComponent,
     AboutUsComponent,
-    ContactComponent
+    ContactComponent,
+    ExpertiseComponent,
+    FirstHomePageComponent
   ],
   imports: [
     BrowserModule,

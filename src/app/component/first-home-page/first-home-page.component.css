@@ -1,0 +1,178 @@
+.homeSquares {
+    height: calc(100vh - 105px);
+    background-image: url('../../../assets/homeSquares.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.sidenav {
+    height: 100%;
+    position: relative;
+}
+
+.sidenavContent {
+    width: 106px;
+    /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1;
+    /* Stay at the top */
+    left: 0;
+    padding-left: 41px;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 50px;
+}
+
+/* The navigation menu links */
+
+.sidenavContent a {
+    padding: 20px 0px 0px 0px;
+    font-size: 10px;
+    color: #FFFFFF;
+    opacity: 30%;
+    display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+
+.sidenavContent a:hover {
+    opacity: 100%;
+}
+
+.sidenavContent div {
+    color: white;
+    opacity: 30%;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    /* IE 9 */
+    -moz-transform: rotate(180deg);
+    /* Firefox */
+    -webkit-transform: rotate(180deg);
+    /* Safari and Chrome */
+    -o-transform: rotate(180deg);
+    /* Opera */
+    font-family: questrial;
+    font-size: 16px;
+    letter-spacing: 5px;
+    padding-top: 30px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media screen and (max-height: 700px) {
+    .sidenavContent div {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-height: 625px) {
+    .sidenavContent div {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #navbarCollapse links ul li a {
+        width: 50% !important;
+        float: right;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .homeSquaresDescriptionText {
+        width: 100% !important;
+        top: 65% !important;
+        font-size: min(4vw,4vh) !important;
+        left: 54% !important;
+    }
+
+    .homeSquaresCenterText {
+         /* font-size: 50px !important; */
+         font-size: min(6vw,6vh) !important;
+         bottom: 30% !important;
+         left: 10% !important;
+    }
+
+    .homeSquaresCenterShadowText {
+        display: none !important;
+    }
+
+    .sidenavContent {
+        padding-left: 20px !important;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    .homeSquaresDescriptionText {
+        top: 75% !important;
+    }
+}
+
+.homeSquaresCenterText {
+    position: absolute;
+    top: 0;
+    bottom: 15%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #FFB18A;
+    font-family: questrial;
+    /* font-size: 60px; */
+    font-size: 5vw;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    letter-spacing: 15px;
+    user-select: none;
+}
+
+.homeSquaresCenterShadowText {
+    position: absolute;
+    top: 0;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #FFB18A;
+    font-family: questrial;
+    /* font-size: 80px; */
+    font-size: 6vw;
+    text-align: center;
+    letter-spacing: 15px;
+    user-select: none;
+    opacity: 0.1;
+    /* padding-left: 10px;
+    padding-right: 10px; */
+}
+
+.homeSquaresDescriptionText {
+    position: absolute;
+    top: 75%;
+    width: 70%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
+    color: white;
+    font-family: questrial;
+    /* font-size: 30px; */
+    font-size: 2vw;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    letter-spacing: 5px;
+    line-height: 1.2;
+    user-select: none;
+}
