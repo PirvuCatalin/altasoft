@@ -30,19 +30,19 @@
     padding: 20px 0px 0px 0px;
     font-size: 10px;
     color: #FFFFFF;
-    opacity: 30%;
+    opacity: 0.3;
     display: block;
 }
 
 /* When you mouse over the navigation links, change their color */
 
 .sidenavContent a:hover {
-    opacity: 100%;
+    opacity: 1;
 }
 
 .sidenavContent div {
     color: white;
-    opacity: 30%;
+    opacity: 0.3;
     writing-mode: vertical-lr;
     transform: rotate(180deg);
     -ms-transform: rotate(180deg);
