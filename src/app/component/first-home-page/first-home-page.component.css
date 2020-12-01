@@ -64,22 +64,29 @@
     user-select: none;
 }
 
-@media screen and (max-height: 700px) {
+@media screen and (max-height: 650px) {
     .sidenavContent div {
-        font-size: 12px;
-        width: 23px;
-    }
-}
-
-@media screen and (max-height: 625px) {
-    .sidenavContent div {
-        padding-top: 0px !important;
+        font-size: 12px !important;
+        width: 23px !important;
     }
 }
 
 @media screen and (max-height: 600px) {
     .sidenavContent div {
-        display: none;
+        padding-top: 0px !important;
+    }
+}
+
+@media screen and (max-height: 550px) {
+    .sidenavContent div {
+        font-size: 8px !important;
+        width: 19px !important;
+    }
+}
+
+@media screen and (max-height: 500px) {
+    .sidenavContent div {
+        display: none !important;
     }
 }
 
@@ -93,6 +100,7 @@
 @media screen and (max-width: 992px) {
     .homeSquares {
         height: calc(100vh - 56px) !important;
+        min-height: -webkit-fill-available;
     }
 
     .homeSquaresDescriptionText {
