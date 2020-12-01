@@ -1,6 +1,5 @@
 .expertise-title-background {
     position: relative;
-    background-color: #272727;
     height: 175px;
 }
 
@@ -30,8 +29,59 @@
     .expertise-title {
         font-size: 3vw;
     }
-
     .expertise-title-shadow {
         display: none;
     }
+    .expertise-domains-flex {
+        flex-direction: column !important;
+        align-items: center;
+    }
+    .expertise-domains-flex div {
+        width: 80vw !important;
+    }
+
+    .expertise-domains-flex div div {
+        font-size: 7vw !important;
+    }
+}
+
+.expertise-domains-flex {
+    flex-direction: row;
+}
+
+.expertise-domains-flex div {
+    width: 33.33vw;
+    height: calc(100vh - 280px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.expertise-domains-flex div div {
+    position: absolute;
+    top: 0;
+    bottom: 15%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    color: white;
+    font-family: raleway-semibold;
+    font-size: 3vw;
+}
+
+#websiteDevelopment {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../../assets/websiteDevelopment.png") no-repeat center / cover;
+}
+
+#modelingTexturing {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../../assets/modelingTexturing.png") no-repeat center / cover;
+}
+
+#softwareDevelopment {
+    background: linear-gradient(rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)), url("../../../assets/softwareDevelopment.png") no-repeat center / cover;
 }
