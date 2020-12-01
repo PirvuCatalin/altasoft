@@ -40,30 +40,26 @@
         width: 100vw !important;
         height: calc(100vh - 175px - 56px) !important;
     }
-
     .expertise-domains-flex div div {
         font-size: 7vw !important;
     }
-
     .strengths-flex {
         flex-direction: column !important;
+        min-height: calc(60vh - 105px) !important;
     }
-
     .strengths-flex div {
-        max-width: none !important;
+        min-width: 80vw;
+        margin-top: 3vh;
     }
-
     .strengths-flex hr {
         border-width: 2px !important;
         width: 10vw !important;
     }
-
     .strengths-title {
         font-size: 4vw !important;
     }
-
     .strengths-description {
-        font-size: 2vw !important;
+        font-size: 4vw !important;
     }
 }
 
@@ -109,13 +105,17 @@
     background: linear-gradient(rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)), url("../../../assets/softwareDevelopment.png") no-repeat center / cover;
 }
 
+.strengths-flex-container {
+    background-color: black;
+}
+
 .strengths-flex {
+    padding: 5vw;
     height: auto;
     min-height: calc(60vh - 105px);
-    background-color: black;
     align-items: center;
-    justify-content: space-evenly; 
-    flex-direction: row;  
+    justify-content: space-evenly;
+    flex-direction: row;
 }
 
 .strengths-flex div {
