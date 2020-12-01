@@ -46,7 +46,6 @@
     }
 
     .strengths-flex {
-        height: calc(60vh - 56px) !important;
         flex-direction: column !important;
     }
 
@@ -111,7 +110,8 @@
 }
 
 .strengths-flex {
-    height: calc(60vh - 105px);
+    height: auto;
+    min-height: calc(60vh - 105px);
     background-color: black;
     align-items: center;
     justify-content: space-evenly; 
