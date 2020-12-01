@@ -37,15 +37,34 @@
         align-items: center;
     }
     .expertise-domains-flex div {
-        width: 80vw !important;
+        width: 100vw !important;
+        height: calc(100vh - 175px - 56px) !important;
     }
 
     .expertise-domains-flex div div {
         font-size: 7vw !important;
     }
 
+    .strengths-flex {
+        height: calc(60vh - 56px) !important;
+        flex-direction: column !important;
+    }
+
+    .strengths-flex div {
+        max-width: none !important;
+    }
+
     .strengths-flex hr {
         border-width: 2px !important;
+        width: 10vw !important;
+    }
+
+    .strengths-title {
+        font-size: 4vw !important;
+    }
+
+    .strengths-description {
+        font-size: 2vw !important;
     }
 }
 
@@ -55,7 +74,7 @@
 
 .expertise-domains-flex div {
     width: 33.33vw;
-    height: calc(100vh - 280px);
+    height: calc(100vh - 175px - 105px);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -95,13 +114,13 @@
     height: calc(60vh - 105px);
     background-color: black;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-evenly; 
+    flex-direction: row;  
 }
 
 .strengths-flex div {
-    width: auto;
-    max-width: 20vw;
-    height: 15vw;
+    max-width: 16vw;
+    height: auto;
 }
 
 .strengths-flex hr {

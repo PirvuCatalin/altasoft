@@ -60,6 +60,10 @@
         width: 50%;
         float: right;
     }
+
+    .custom-header {
+        min-height: 56px !important;
+    }
 }
 
 body {
