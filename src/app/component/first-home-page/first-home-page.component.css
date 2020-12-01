@@ -101,6 +101,7 @@
     .homeSquares {
         height: none !important;
         min-height: -webkit-fill-available;
+        margin-top: 56px;
     }
 
     .homeSquaresDescriptionText {
