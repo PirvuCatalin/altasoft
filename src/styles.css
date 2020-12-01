@@ -72,3 +72,8 @@
 body {
     background-color: #272727;
 }
+
+:root {
+    --desktop-header-height: 105px;
+    --mobile-header-height: 56px;
+}

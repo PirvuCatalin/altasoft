@@ -11,6 +11,7 @@ import { AboutUsComponent } from './component/about-us/about-us.component';
 import { ContactComponent } from './component/contact/contact.component';
 import { ExpertiseComponent } from './component/expertise/expertise.component';
 import { FirstHomePageComponent } from './component/first-home-page/first-home-page.component';
+import { OurTeamComponent } from './component/our-team/our-team.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FirstHomePageComponent } from './component/first-home-page/first-home-p
     AboutUsComponent,
     ContactComponent,
     ExpertiseComponent,
-    FirstHomePageComponent
+    FirstHomePageComponent,
+    OurTeamComponent
   ],
   imports: [
     BrowserModule,
