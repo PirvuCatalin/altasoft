@@ -67,10 +67,17 @@
 @media screen and (max-height: 700px) {
     .sidenavContent div {
         font-size: 12px;
+        width: 23px;
     }
 }
 
 @media screen and (max-height: 625px) {
+    .sidenavContent div {
+        padding-top: 0px !important;
+    }
+}
+
+@media screen and (max-height: 600px) {
     .sidenavContent div {
         display: none;
     }
