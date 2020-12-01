@@ -6,3 +6,9 @@ ul {
 ul li {
     padding-left: 50px;
 }
+
+@media screen and (max-width: 992px) {
+    img {
+        height: 40px;
+    }
+}

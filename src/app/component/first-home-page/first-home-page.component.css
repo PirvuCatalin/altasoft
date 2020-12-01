@@ -91,6 +91,10 @@
 }
 
 @media screen and (max-width: 992px) {
+    .homeSquares {
+        height: calc(100vh - 56px) !important;
+    }
+
     .homeSquaresDescriptionText {
         width: calc(100% - 100px) !important;
         /* update the calc pixels with the padding of the element*/
