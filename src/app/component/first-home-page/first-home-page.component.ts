@@ -13,9 +13,14 @@ export class FirstHomePageComponent implements OnInit {
   }
 
   onClickScrollArrow() {
-    const element = document.querySelector("#expertiseElement")
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'end' })
+    const scrollTarget = document.getElementById("expertiseElement");
+    let headerHeight = document.getElementsByClassName("custom-header")[0].scrollHeight;
+
+    if (scrollTarget) {
+      window.scrollTo({
+        top: scrollTarget.offsetTop - headerHeight,
+        behavior: 'smooth'
+      });
     }
   }
 }
