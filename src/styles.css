@@ -63,6 +63,8 @@
 
     .custom-header {
         min-height: 56px !important;
+        position: sticky !important;
+        position: -webkit-sticky !important;
     }
 }
 
