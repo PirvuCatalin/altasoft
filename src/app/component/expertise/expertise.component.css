@@ -43,6 +43,10 @@
     .expertise-domains-flex div div {
         font-size: 7vw !important;
     }
+
+    .strengths-flex hr {
+        border-width: 2px !important;
+    }
 }
 
 .expertise-domains-flex {
@@ -72,6 +76,7 @@
     color: white;
     font-family: raleway-semibold;
     font-size: 3vw;
+    user-select: none;
 }
 
 #websiteDevelopment {
@@ -84,4 +89,40 @@
 
 #softwareDevelopment {
     background: linear-gradient(rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)), url("../../../assets/softwareDevelopment.png") no-repeat center / cover;
+}
+
+.strengths-flex {
+    height: calc(60vh - 105px);
+    background-color: black;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.strengths-flex div {
+    width: auto;
+    max-width: 20vw;
+    height: 15vw;
+}
+
+.strengths-flex hr {
+    border: 5px solid #FF7129;
+    border-radius: 5px;
+    width: 5vw;
+    margin-left: 0;
+}
+
+.strengths-title {
+    color: white;
+    font-family: quicksand-semibold;
+    font-size: 2vw;
+    user-select: none;
+    height: auto !important;
+}
+
+.strengths-description {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: quicksand-light;
+    font-size: 1.2vw;
+    user-select: none;
+    height: auto !important;
 }

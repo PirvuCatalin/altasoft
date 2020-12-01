@@ -20,6 +20,31 @@
     src: url(assets/Raleway-Medium.ttf) format("opentype");
 }
 
+@font-face {
+    font-family: quicksand-light;
+    src: url(assets/Quicksand-Light.ttf) format("opentype");
+}
+
+@font-face {
+    font-family: quicksand-regular;
+    src: url(assets/Quicksand-Regular.ttf) format("opentype");
+}
+
+@font-face {
+    font-family: quicksand-medium;
+    src: url(assets/Quicksand-Medium.ttf) format("opentype");
+}
+
+@font-face {
+    font-family: quicksand-semibold;
+    src: url(assets/Quicksand-SemiBold.ttf) format("opentype");
+}
+
+@font-face {
+    font-family: quicksand-bold;
+    src: url(assets/Quicksand-Bold.ttf) format("opentype");
+}
+
 /* adding class to site header */
 
 .custom-header {
