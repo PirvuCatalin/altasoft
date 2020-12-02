@@ -1,20 +1,17 @@
 .our-team {
-    min-height: calc(60vh - var(--desktop-header-height));
-}
-
-.our-team-title-background {
+    height: fit-content;
+    padding-top: 3vh;
     position: relative;
-    height: 175px;
+    padding-bottom: 5vh;
 }
 
 .our-team-title {
     position: absolute;
-    top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
     font-family: questrial;
-    font-size: 2vw;
+    font-size: 5vh;
     text-align: center;
     letter-spacing: 15px;
     user-select: none;
@@ -24,16 +21,66 @@
 
 .our-team-title-shadow {
     opacity: 0.05;
-    font-size: 5vw;
-    top: 60%;
+    position: relative;
+    font-size: 10vh;
     letter-spacing: 25px;
+    height: fit-content;
+}
+
+.our-team-flex-container {
+    bottom: 0;
+    position: relative;
+    width: 80%;
+    height: calc(100% - 3vh - 15vh);
+    margin-left: 10vw;
+}
+
+.our-team-flex {
+    height: 100%;
+}
+
+.team-group-flex {
+    width: 40vw;
+    height: 100%;
+}
+
+.team-member-flex {
+    width: 45vw;
+    height: 100%;
+    text-align: center;
+}
+
+img {
+    max-width: 60%;
+}
+
+.team-member-description {
+    padding-top: 5px;
+    color: white;
+    font-family: quicksand-light;
+}
+
+.team-member-description div {
+    font-family: quicksand-semibold;
 }
 
 @media screen and (max-width: 992px) {
     .our-team-title {
-        font-size: 3vw;
+        font-size: 3vh;
+        position: relative;
     }
     .our-team-title-shadow {
         display: none;
+    }
+    .our-team-flex-container {
+        height: calc(100% - 7vh);
+    }
+    .our-team-flex {
+        flex-direction: column;
+    }
+
+    .team-group-flex {
+        width: 80vw !important;
+        margin-top: 3vh;
     }
 }
