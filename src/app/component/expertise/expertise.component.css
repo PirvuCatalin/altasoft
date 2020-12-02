@@ -38,14 +38,14 @@
     }
     .expertise-domains-flex div {
         width: 100vw !important;
-        height: calc(100vh - 175px - 56px) !important;
+        height: calc(100vh - 175px - var(--mobile-header-height)) !important;
     }
     .expertise-domains-flex div div {
         font-size: 7vw !important;
     }
     .strengths-flex {
         flex-direction: column !important;
-        min-height: calc(60vh - 105px) !important;
+        min-height: calc(60vh - var(--desktop-header-height)) !important;
     }
     .strengths-flex div {
         min-width: 80vw;
@@ -69,7 +69,7 @@
 
 .expertise-domains-flex div {
     width: 33.33vw;
-    height: calc(100vh - 175px - 105px);
+    height: calc(100vh - 175px - var(--desktop-header-height));
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -94,11 +94,11 @@
 }
 
 #websiteDevelopment {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../../assets/websiteDevelopment.png") no-repeat center / cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)), url("../../../assets/websiteDevelopment.png") no-repeat center / cover;
 }
 
 #modelingTexturing {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../../assets/modelingTexturing.png") no-repeat center / cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)), url("../../../assets/modelingTexturing.png") no-repeat center / cover;
 }
 
 #softwareDevelopment {
@@ -112,7 +112,7 @@
 .strengths-flex {
     padding: 5vw;
     height: auto;
-    min-height: calc(60vh - 105px);
+    min-height: calc(60vh - var(--desktop-header-height));
     align-items: center;
     justify-content: space-evenly;
     flex-direction: row;
