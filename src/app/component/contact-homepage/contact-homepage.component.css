@@ -29,6 +29,7 @@
 }
 
 .contact-homepage-contact-button {
+    cursor: pointer;
     border: solid;
     border-color: white;
     border-width: 2px;
@@ -43,6 +44,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    transition: 0.5s;
+}
+.contact-homepage-contact-button:hover {
+    background-color: rgba(255,255,255,0.5);
 }
 
 .vr {
@@ -96,4 +102,9 @@
     .vr {
         width: 50%;
     }
+}
+
+img:hover {
+    transition: 0.5s;
+    opacity: 0.5;
 }
