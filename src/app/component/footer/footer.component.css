@@ -1,6 +1,6 @@
 .footer {
     user-select: none;
-    height: 200px;
+    height: 175px;
     background-color: #272727;
     flex-direction: column;
     padding-top: 1vh;
@@ -23,6 +23,7 @@
 }
 
 .footer-about-and-contact a {
+    width: 160px;
     color: white;
     font-family: montserrat-regular;
     font-size: 14px;
@@ -30,12 +31,13 @@
 }
 
 .footer-privacy-terms {
-    width: 40%;
+    width: 30%;
     display: flex;
     justify-content: space-around;
 }
 
 .footer-privacy-terms a {
+    width: 160px;
     color: white;
     font-family: montserrat-medium;
     font-size: 12px;
@@ -67,7 +69,7 @@ img {
 
 @media screen and (max-width: 992px) {
     .footer-about-and-contact {
-        width: 45%;
+        width: 50%;
     }
 
     .footer-privacy-terms {
@@ -86,6 +88,14 @@ img {
     }
 
     .footer-privacy-terms {
-        width: 75%;
+        width: 55%;
+    }
+
+    img {
+        height: 40px;
+    }
+
+    footer {
+        height: 115px;
     }
 }
