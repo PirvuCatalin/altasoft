@@ -1,0 +1,110 @@
+.contact-homepage {
+    background-color: black;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+.contact-homepage-message {
+    user-select: none;
+    color: white;
+    text-align: center;
+    font-family: questrial;
+    font-size: 3vw;
+    padding-bottom: 3vh;
+}
+
+.contact-homepage-buttons-container {
+    user-select: none;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    height: 10vh;
+    min-height: 100px;
+    align-items: center;
+}
+
+.contact-homepage-buttons-container-flex {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-homepage-contact-button {
+    cursor: pointer;
+    border: solid;
+    border-color: white;
+    border-width: 2px;
+    height: 50px;
+    max-height: 50px;
+    max-width: 250px;
+    width: 20vw;
+    font-family: questrial;
+    color: white;
+    font-size: 2vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.5s;
+}
+.contact-homepage-contact-button:hover {
+    background-color: rgba(255,255,255,0.5);
+}
+
+.vr {
+    display: inline;
+    height: 100%;
+    width: 1px;
+    opacity: 0.2;
+    border: 1px inset;
+    margin: 5px;
+}
+
+.contact-homepage-social-buttons {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+@media screen and (min-width: 1250px) {
+    .contact-homepage-contact-button {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .contact-homepage-contact-button {
+        height: 10vw;
+    }
+    .contact-homepage-message {
+        font-size: 5vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact-homepage-buttons-container {
+        flex-direction: column;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+        height: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .contact-homepage-social-buttons-container {
+        padding-top: 1vh;
+    }
+
+    .contact-homepage-contact-button-container {
+        padding-bottom: 1vh;
+    }
+
+    .vr {
+        width: 50%;
+    }
+}
+
+img:hover {
+    transition: 0.5s;
+    opacity: 0.5;
+}
