@@ -45,6 +45,16 @@
     src: url(assets/Quicksand-Bold.ttf) format("opentype");
 }
 
+@font-face {
+    font-family: montserrat-regular;
+    src: url(assets/Montserrat-Regular.ttf) format("opentype");
+}
+
+@font-face {
+    font-family: montserrat-medium;
+    src: url(assets/Montserrat-Medium.ttf) format("opentype");
+}
+
 /* adding class to site header */
 
 .custom-header {

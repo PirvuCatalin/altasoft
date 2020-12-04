@@ -5,6 +5,7 @@
 }
 
 .contact-homepage-message {
+    user-select: none;
     color: white;
     text-align: center;
     font-family: questrial;
@@ -13,6 +14,7 @@
 }
 
 .contact-homepage-buttons-container {
+    user-select: none;
     padding-left: 15vw;
     padding-right: 15vw;
     height: 10vh;
