@@ -96,6 +96,6 @@ img {
     }
 
     footer {
-        height: 115px;
+        height: 115px !important;
     }
 }
